@@ -10,7 +10,9 @@ spring:
   boot:
     admin:
       url: ${ADMIN_SERVICE:http://localhost:8080}
-      client:
-        metadata:
-          user.name: ${security.user.name:admin}
-          user.password: ${security.user.password:admin}
+      
+management:
+  port: 9085
+  context-path: "/actuator"  
+  security:
+    enabled: false
