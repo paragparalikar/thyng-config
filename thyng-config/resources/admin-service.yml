@@ -16,8 +16,8 @@ spring:
       password: "${security.user.password}"   #can register at the protected server api
       client:
         metadata:
-          user.name: "${security.user.name}"          #These two are needed so that the server
-          user.password: "${security.user.password}" #can access the proteceted client endpoints
+          user.name: "${security.user.name:admin}"          #These two are needed so that the server
+          user.password: "${security.user.password:admin}" #can access the proteceted client endpoints
 
 
 security:
