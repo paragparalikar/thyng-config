@@ -1,5 +1,11 @@
 server:
   port: 8080
+  
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,activiti
 
 eureka:
   client:
