@@ -6,13 +6,6 @@ eureka:
     serviceUrl:
       defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
       
-spring:
-  boot:
-    admin:
-      url: ${ADMIN_SERVICE:http://localhost:8080}
-      username: ${ADMIN_USERNAME:admin}
-      password: ${ADMIN_PASSWORD:admin}
-      
 management:
   security:
     enabled: false

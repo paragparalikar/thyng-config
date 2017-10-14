@@ -1,6 +1,0 @@
-spring: 
-  boot:
-    admin:
-      url: ${ADMIN_SERVICE:http://localhost:8080}
-      username: ${ADMIN_USERNAME:admin}
-      password: ${ADMIN_PASSWORD:admin}
