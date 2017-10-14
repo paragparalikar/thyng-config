@@ -9,7 +9,5 @@ spring:
       url: ${ADMIN_SERVICE:http://localhost:8080}
       
 management:
-  port: 9085
-  context-path: "/actuator"  
   security:
     enabled: false
