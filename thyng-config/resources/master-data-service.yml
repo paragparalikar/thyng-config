@@ -8,8 +8,8 @@ security:
     client:
       clientId: ${spring.application.name}
       clientSecret: 123
-      accessTokenUri: https://localhost:9999/uaa/oauth/access_token
-      userAuthorizationUri: https://localhost:9999/uaa/oauth/authorize
+      accessTokenUri: http://localhost:9999/uaa/oauth/access_token
+      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
       clientAuthenticationScheme: form
     resource:
-      userInfoUri: https://api.github.com/user
+      userInfoUri: http://localhost:8085/user
