@@ -1,6 +1,9 @@
 server:
   port: 9999
   context-path: /uaa
+security: 
+  basic: 
+    enabled: false
 eureka:
   client:
     serviceUrl:
