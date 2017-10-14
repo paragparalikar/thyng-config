@@ -12,4 +12,4 @@ security:
       userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
       clientAuthenticationScheme: form
     resource:
-      userInfoUri: http://localhost:8085/user
+      userInfoUri: http://localhost:9999/uaa/user
