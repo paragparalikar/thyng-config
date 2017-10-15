@@ -4,5 +4,8 @@ eureka:
       defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
 security:
   oauth2:
+    client:
+      id: ${spring.application.name}
+      secret: ${spring.application.name}
     resource:
       token-info-uri: http://localhost:9999/uaa/oauth/check_token
