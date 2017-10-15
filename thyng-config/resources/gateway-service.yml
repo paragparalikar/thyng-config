@@ -12,4 +12,4 @@ spring:
       access-token-uri: http://localhost:9999/uaa/oauth/token
       user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
       client-id: ${spring.application.name}
-      client-secret: ${spring.application.name}
+      client-secret: ${spring.application.name}  

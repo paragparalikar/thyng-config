@@ -1,12 +1,6 @@
 server:
   port: 9999
   context-path: /uaa
-security: 
-  user:
-    password: parag
-  oauth2: 
-    resource: 
-      filter-order: 3
 eureka:
   client:
     serviceUrl:
