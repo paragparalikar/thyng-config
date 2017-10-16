@@ -1,15 +1,20 @@
 server:
   port: 8080
   
+security: 
+  user: 
+    name: parag
+    password: parag
+  
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
+      defaultZone: ${DISCOVERY_SERVICE:http://parag:parag@localhost:8761/eureka/}
       
 spring:
   oauth2:
     client:
-      access-token-uri: http://localhost:9999/uaa/oauth/token
-      user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
-      client-id: ${spring.application.name}
-      client-secret: ${spring.application.name}  
+      access-token-uri: http://parag:parag@localhost:9999/uaa/oauth/token
+      user-authorization-uri: http://parag:parag@localhost:9999/uaa/oauth/authorize
+      client-id: gateway-service
+      client-secret: gateway-service  

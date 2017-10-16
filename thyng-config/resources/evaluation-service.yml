@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVICE:http://parag:parag@localhost:8761/eureka/}
+    
+security:
+  user: 
+    name: parag
+    password: parag
+  oauth2:
+    client:
+      client-id: evaluation-service
+      client-secret: evaluation-service
+    resource:
+      token-info-uri: http://parag:parag@localhost:9999/uaa/oauth/check_token

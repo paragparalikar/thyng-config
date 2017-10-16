@@ -1,10 +1,10 @@
 server:
   port: 8080
 
-security:
-  user:
-    name: admin
-    password: admin123
+security: 
+  user: 
+    name: parag
+    password: parag
       
 spring:
   boot:
@@ -15,4 +15,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
+      defaultZone: ${DISCOVERY_SERVICE:http://parag:parag@localhost:8761/eureka/}

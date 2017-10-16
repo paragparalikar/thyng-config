@@ -1,11 +1,15 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
+      defaultZone: ${DISCOVERY_SERVICE:http://parag:parag@localhost:8761/eureka/}
+    
 security:
+  user: 
+    name: parag
+    password: parag
   oauth2:
     client:
-      client-id: ${spring.application.name}
-      client-secret: ${spring.application.name}
+      client-id: master-data-service
+      client-secret: master-data-service
     resource:
-      token-info-uri: http://localhost:9999/uaa/oauth/check_token
+      token-info-uri: http://parag:parag@localhost:9999/uaa/oauth/check_token
