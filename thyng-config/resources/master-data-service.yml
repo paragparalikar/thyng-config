@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://parag:parag@localhost:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 security:
   oauth2:
@@ -12,4 +12,4 @@ security:
       client-id: master-data-service
       client-secret: master-data-service
     resource:
-      token-info-uri: http://parag:parag@localhost:9999/uaa/oauth/check_token
+      token-info-uri: http://localhost:9999/uaa/oauth/check_token
