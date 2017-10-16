@@ -14,12 +14,10 @@ eureka:
 spring:
   oauth2:
     client:
-      access-token-uri: http://localhost:8080/oauth/token
-      user-authorization-uri: http://localhost:8080/oauth/authorize
+      access-token-uri: http://localhost:9999/uaa/oauth/token
+      user-authorization-uri: http://localhost:9999/uaa/oauth/authorize
       client-id: gateway-service
       client-secret: gateway-service
-    resource:
-      user-info-uri: http://localhost:8080/user
-      
+
 zuul: 
   sensitiveHeaders:
