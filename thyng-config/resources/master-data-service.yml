@@ -3,14 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://parag:parag@localhost:8761/eureka/
 
-server:
-  port: 8085
-
-    
 security:
-  user: 
-    name: parag
-    password: parag
   oauth2:
     client:
       client-id: master-data-service
