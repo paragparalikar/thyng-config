@@ -1,8 +1,9 @@
 server:
   port: 9999
   context-path: /uaa
-    
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/}
+      defaultZone: ${DISCOVERY_SERVICE:http://localhost:8761/eureka/} 
+ 

@@ -1,6 +1,9 @@
+security:
+  sessions: NEVER
+
 server:
   port: 8085
-
+  
 eureka:
   client:
     serviceUrl:
